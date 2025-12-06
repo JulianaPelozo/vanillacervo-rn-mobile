@@ -7,7 +7,7 @@ export default function TabsLayout() {
     <Tabs
       screenOptions={{
         headerShown: true,
-        tabBarActiveTintColor: "#3b82f6",
+        tabBarActiveTintColor: "#c300ffff",
       }}
     >
       <Tabs.Screen
@@ -28,15 +28,7 @@ export default function TabsLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="add"
-        options={{
-          title: "Adicionar",
-          tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="add-circle-outline" size={size} color={color} />
-          ),
-        }}
-      />
     </Tabs>
   );
 }
+
