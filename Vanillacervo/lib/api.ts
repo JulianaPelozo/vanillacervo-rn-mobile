@@ -1,9 +1,7 @@
-// lib/api.ts
 import { API_URL } from "./config";
 
 const jsonHeaders = { "Content-Type": "application/json" };
 
-/* BOOKS */
 export async function getBooks() {
   const res = await fetch(`${API_URL}/books`);
   if (!res.ok) throw new Error("Erro ao buscar livros");
@@ -50,7 +48,6 @@ export async function deleteBook(id: number) {
   return res.json();
 }
 
-/* CDS */
 export async function getCDs() {
   const res = await fetch(`${API_URL}/cds`);
   if (!res.ok) throw new Error("Erro ao buscar CDs");
